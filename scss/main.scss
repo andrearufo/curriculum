@@ -1,3 +1,6 @@
+// Fontawesome
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css');
+
 // Reset
 @import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
 
@@ -17,6 +20,11 @@ $font-size-large: $font-size-base * 1.2;
 
 $line-height: 1.8;
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
 
 // Mains
 body{
@@ -40,67 +48,133 @@ img{
     padding-right: $spacer;
 }
 
-h1{
-    text-align: center;
-    color: $dark;
-    margin: 0;
-    margin-top: $spacer;
+a{
+    color: $primary;
+    text-decoration: none;
+
+    &:hover{
+        text-decoration: underline;
+        color: $dark;
+    }
 }
 
-.claim{
-    text-align: center;
-    color: $light;
-    font-size: $font-size-large;
+h1, h2, h3, h4, h5, h6, p{
+    margin-top: 0;
     margin-bottom: $spacer;
 }
 
-.portrait{
-    margin: $spacer;
-    text-align: center;
+header{
+    h1{
+        text-align: center;
+        color: $dark;
+        margin-top: $spacer;
+    }
 
-    img{
-        border-radius: 100%;
-        width: 200px;
-        height: 200px;
-        object-fit: cover;
+    .claim{
+        text-align: center;
+        color: $light;
+        font-size: $font-size-large;
+        margin-bottom: $spacer;
+    }
+
+    .portrait{
+        margin: $spacer;
+        text-align: center;
+
+        img{
+            border-radius: 100%;
+            max-width: 200px;
+            max-height: 200px;
+            object-fit: cover;
+        }
     }
 }
 
+section{
+    padding: $spacer 0;
+}
+
+#presentation{
+
+}
+
 #curriculum{
-    list-style: none;
-    margin: 0;
-    padding: 0;
+    #curriculum-list{
+        list-style: none;
+        margin: 0;
+        padding: 0;
 
-    .curriculum-item{
-        margin-bottom: $spacer;
+        .curriculum-list-item{
+            margin-bottom: $spacer;
 
-        .curriculum-item-year,
-        .curriculum-item-position,
-        .curriculum-item-society,
-        .curriculum-item-body{
-            display: block;
-        }
+            .curriculum-list-item-year,
+            .curriculum-list-item-position,
+            .curriculum-list-item-society,
+            .curriculum-list-item-body{
+                display: block;
+            }
 
-        .curriculum-item-year{
-            color: $light;
-            font-weight: bold;
-            font-size: $font-size-small;
-            text-transform: uppercase;
-        }
+            .curriculum-list-item-year{
+                color: $light;
+                font-weight: bold;
+                font-size: $font-size-small;
+                text-transform: uppercase;
+            }
 
-        .curriculum-item-position{
-            font-weight: bold;
-        }
+            .curriculum-list-item-position{
+                font-weight: bold;
+            }
 
-        .curriculum-item-society{
-            font-size: $font-size-small;
-        }
+            .curriculum-list-item-society{
+                // font-size: $font-size-small;
+                // margin-left: $spacer;
+            }
 
-        .curriculum-item-body{
-            border-left: 1px solid $light;
-            padding-left: $spacer;
-            margin-top: $spacer;
-            font-size: $font-size-small;
+            .curriculum-list-item-body{
+                font-size: $font-size-small;
+            }
         }
     }
+}
+
+#contacts{
+    #contacts-list{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        .contacts-list-item{
+            @media (min-width: $container) {
+                display: inline-block;
+
+                &:not(:last-child){
+                    margin-right: $spacer;
+                }
+            }
+
+            i{
+                color: $light
+            }
+        }
+    }
+}
+
+footer{
+    font-size: $font-size-small;
+    color: $light;
+    text-align: center;
+    padding: $spacer 0;
+
+    &::before{
+        content: '';
+        display: block;
+        width: 20%;
+        margin: 0 auto $spacer auto;
+        border-top: 1px solid $light;
+    }
+
+    a{
+        color: inherit;
+    }
+
 }
