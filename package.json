@@ -1,8 +1,8 @@
 {
-  "name": "cvhtml",
+  "name": "curriculum",
   "version": "1.0.0",
-  "main": "index.js",
-  "repository": "https://andrearufo@github.com/andrearufo/cvhtml.git",
+  "main": "gulpfile.js",
+  "repository": "https://andrearufo@github.com/andrearufo/curriculum.git",
   "author": "Andrea Rufo <info@andrearufo.it>",
   "license": "MIT",
   "dependencies": {
