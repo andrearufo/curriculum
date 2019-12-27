@@ -46,6 +46,7 @@ header h1 {
   text-align: center;
   color: #2f3542;
   margin-top: 1rem;
+  margin-bottom: 0;
 }
 
 header .claim {
