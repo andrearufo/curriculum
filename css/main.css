@@ -45,11 +45,7 @@ h1, h2, h3, h4, h5, h6, p {
 header h1 {
   text-align: center;
   color: #2f3542;
-<<<<<<< HEAD
   margin-top: 2rem;
-=======
-  margin-top: 1rem;
->>>>>>> 9fef577d9a8928b9944463856d7acead347d13bf
   margin-bottom: 0;
 }
 
