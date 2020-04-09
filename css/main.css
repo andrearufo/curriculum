@@ -23,8 +23,8 @@ img {
   max-width: 960px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 a {
@@ -39,37 +39,45 @@ a:hover {
 
 h1, h2, h3, h4, h5, h6, p {
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 header h1 {
   text-align: center;
   color: #2f3542;
-  margin-top: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 0;
 }
 
 header .claim {
   text-align: center;
   color: #a4b0be;
   font-size: 1.44rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
-header .portrait {
-  margin: 1rem;
+#portrait {
+  padding: 0;
+  margin: 2rem 0;
   text-align: center;
 }
 
-header .portrait img {
-  border-radius: 100%;
-  max-width: 200px;
-  max-height: 200px;
+#portrait img {
+  width: 100%;
+  height: auto;
+  max-height: 60vh;
   -o-object-fit: cover;
      object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 
-section {
-  padding: 1rem 0;
+#presentation {
+  padding: 2rem 0;
+}
+
+#curriculum {
+  padding: 2rem 0;
 }
 
 #curriculum #curriculum-list {
@@ -79,7 +87,7 @@ section {
 }
 
 #curriculum #curriculum-list .curriculum-list-item {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 #curriculum #curriculum-list .curriculum-list-item .curriculum-list-item-year,
@@ -104,6 +112,10 @@ section {
   font-size: 0.96rem;
 }
 
+#contacts {
+  padding: 2rem 0;
+}
+
 #contacts #contacts-list {
   list-style: none;
   margin: 0;
@@ -115,7 +127,7 @@ section {
     display: inline-block;
   }
   #contacts #contacts-list .contacts-list-item:not(:last-child) {
-    margin-right: 1rem;
+    margin-right: 2rem;
   }
 }
 
@@ -127,14 +139,14 @@ footer {
   font-size: 0.96rem;
   color: #a4b0be;
   text-align: center;
-  padding: 1rem 0;
+  padding: 2rem 0;
 }
 
 footer::before {
   content: '';
   display: block;
   width: 20%;
-  margin: 0 auto 1rem auto;
+  margin: 0 auto 2rem auto;
   border-top: 1px solid #a4b0be;
 }
 

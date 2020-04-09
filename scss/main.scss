@@ -5,11 +5,11 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
 
 // Variables
-$spacer: 1rem;
+$spacer: 2rem;
 $container: 960px;
 
 $primary: #70a1ff;
-$body: #000;
+$body: #111;
 $background: #fff;
 $light: #a4b0be;
 $dark: #2f3542;
@@ -68,6 +68,7 @@ header{
         text-align: center;
         color: $dark;
         margin-top: $spacer;
+        margin-bottom: 0;
     }
 
     .claim{
@@ -76,29 +77,29 @@ header{
         font-size: $font-size-large;
         margin-bottom: $spacer;
     }
+}
 
-    .portrait{
-        margin: $spacer;
-        text-align: center;
+#portrait{
+    padding: 0;
+    margin: $spacer 0;
+    text-align: center;
 
-        img{
-            border-radius: 100%;
-            max-width: 200px;
-            max-height: 200px;
-            object-fit: cover;
-        }
+    img{
+        width: 100%;
+        height: auto;
+        max-height: 60vh;
+        object-fit: cover;
+        object-position: center;
     }
 }
 
-section{
+#presentation{
     padding: $spacer 0;
 }
 
-#presentation{
-
-}
-
 #curriculum{
+    padding: $spacer 0;
+
     #curriculum-list{
         list-style: none;
         margin: 0;
@@ -138,6 +139,8 @@ section{
 }
 
 #contacts{
+    padding: $spacer 0;
+
     #contacts-list{
         list-style: none;
         margin: 0;
