@@ -5,14 +5,15 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
 
 // Variables
+// https://colors.dopely.top/palette/7qyno4/
 $spacer: 2rem;
 $container: 960px;
 
-$primary: #70a1ff;
-$body: #111;
-$background: #fff;
-$light: #a4b0be;
-$dark: #2f3542;
+$primary: #045C94;
+$body: #708292;
+$background: #ffffff;
+$light: #AFBDC7;
+$dark: #04649B;
 
 $font-size-base: 1.2rem;
 $font-size-small: $font-size-base * 0.8;
@@ -63,6 +64,11 @@ h1, h2, h3, h4, h5, h6, p{
     margin-bottom: $spacer;
 }
 
+code{
+    background: $light;
+    padding: 0 .1rem;
+}
+
 header{
     h1{
         text-align: center;
@@ -77,6 +83,10 @@ header{
         font-size: $font-size-large;
         margin-bottom: $spacer;
     }
+}
+
+section{
+    padding: $spacer 0;
 }
 
 #portrait{
@@ -94,12 +104,10 @@ header{
 }
 
 #presentation{
-    padding: $spacer 0;
+
 }
 
 #curriculum{
-    padding: $spacer 0;
-
     #curriculum-list{
         list-style: none;
         margin: 0;
@@ -139,22 +147,12 @@ header{
 }
 
 #contacts{
-    padding: $spacer 0;
-
     #contacts-list{
         list-style: none;
         margin: 0;
         padding: 0;
 
         .contacts-list-item{
-            @media (min-width: $container) {
-                display: inline-block;
-
-                &:not(:last-child){
-                    margin-right: $spacer;
-                }
-            }
-
             i{
                 color: $light
             }
@@ -167,14 +165,6 @@ footer{
     color: $light;
     text-align: center;
     padding: $spacer 0;
-
-    &::before{
-        content: '';
-        display: block;
-        width: 20%;
-        margin: 0 auto $spacer auto;
-        border-top: 1px solid $light;
-    }
 
     a{
         color: inherit;

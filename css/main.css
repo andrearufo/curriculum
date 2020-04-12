@@ -28,13 +28,13 @@ img {
 }
 
 a {
-  color: #70a1ff;
+  color: #045C94;
   text-decoration: none;
 }
 
 a:hover {
   text-decoration: underline;
-  color: #2f3542;
+  color: #04649B;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -42,18 +42,27 @@ h1, h2, h3, h4, h5, h6, p {
   margin-bottom: 2rem;
 }
 
+code {
+  background: #AFBDC7;
+  padding: 0 .1rem;
+}
+
 header h1 {
   text-align: center;
-  color: #2f3542;
+  color: #04649B;
   margin-top: 2rem;
   margin-bottom: 0;
 }
 
 header .claim {
   text-align: center;
-  color: #a4b0be;
+  color: #AFBDC7;
   font-size: 1.44rem;
   margin-bottom: 2rem;
+}
+
+section {
+  padding: 2rem 0;
 }
 
 #portrait {
@@ -70,14 +79,6 @@ header .claim {
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
-}
-
-#presentation {
-  padding: 2rem 0;
-}
-
-#curriculum {
-  padding: 2rem 0;
 }
 
 #curriculum #curriculum-list {
@@ -98,7 +99,7 @@ header .claim {
 }
 
 #curriculum #curriculum-list .curriculum-list-item .curriculum-list-item-year {
-  color: #a4b0be;
+  color: #AFBDC7;
   font-weight: bold;
   font-size: 0.96rem;
   text-transform: uppercase;
@@ -112,42 +113,21 @@ header .claim {
   font-size: 0.96rem;
 }
 
-#contacts {
-  padding: 2rem 0;
-}
-
 #contacts #contacts-list {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-@media (min-width: 960px) {
-  #contacts #contacts-list .contacts-list-item {
-    display: inline-block;
-  }
-  #contacts #contacts-list .contacts-list-item:not(:last-child) {
-    margin-right: 2rem;
-  }
-}
-
 #contacts #contacts-list .contacts-list-item i {
-  color: #a4b0be;
+  color: #AFBDC7;
 }
 
 footer {
   font-size: 0.96rem;
-  color: #a4b0be;
+  color: #AFBDC7;
   text-align: center;
   padding: 2rem 0;
-}
-
-footer::before {
-  content: '';
-  display: block;
-  width: 20%;
-  margin: 0 auto 2rem auto;
-  border-top: 1px solid #a4b0be;
 }
 
 footer a {
