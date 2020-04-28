@@ -1,19 +1,20 @@
 // Fontawesome
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css');
 
 // Reset
-@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
+@import '../../node_modules/normalize.css/normalize.css';
 
 // Variables
 // https://colors.dopely.top/palette/7qyno4/
 $spacer: 2rem;
 $container: 960px;
+$border-radius: 10px;
 
 $primary: #045C94;
 $body: #708292;
 $background: #ffffff;
-$light: #AFBDC7;
-$dark: #04649B;
+$light: lighten($body, 10%);
+$dark: darken($primary, 10%);
 
 $font-size-base: 1.2rem;
 $font-size-small: $font-size-base * 0.8;
@@ -100,6 +101,7 @@ section{
         max-height: 60vh;
         object-fit: cover;
         object-position: center;
+        border-radius: $border-radius;
     }
 }
 
@@ -147,12 +149,18 @@ section{
 }
 
 #contacts{
-    #contacts-list{
+    ul#contacts-list{
         list-style: none;
         margin: 0;
         padding: 0;
 
-        .contacts-list-item{
+        li.contacts-list-item{
+            display: inline-block;
+
+            &:not(:last-child){
+                padding-right: $spacer;
+            }
+
             i{
                 color: $light
             }

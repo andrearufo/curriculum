@@ -1,5 +1,5 @@
-@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css");
-@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css");
+@import url(../../node_modules/normalize.css/normalize.css);
 *,
 *::before,
 *::after {
@@ -34,7 +34,7 @@ a {
 
 a:hover {
   text-decoration: underline;
-  color: #04649B;
+  color: #033d62;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -43,20 +43,20 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 code {
-  background: #AFBDC7;
+  background: #8d9ba8;
   padding: 0 .1rem;
 }
 
 header h1 {
   text-align: center;
-  color: #04649B;
+  color: #033d62;
   margin-top: 2rem;
   margin-bottom: 0;
 }
 
 header .claim {
   text-align: center;
-  color: #AFBDC7;
+  color: #8d9ba8;
   font-size: 1.44rem;
   margin-bottom: 2rem;
 }
@@ -79,6 +79,7 @@ section {
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
+  border-radius: 10px;
 }
 
 #curriculum #curriculum-list {
@@ -99,7 +100,7 @@ section {
 }
 
 #curriculum #curriculum-list .curriculum-list-item .curriculum-list-item-year {
-  color: #AFBDC7;
+  color: #8d9ba8;
   font-weight: bold;
   font-size: 0.96rem;
   text-transform: uppercase;
@@ -113,19 +114,27 @@ section {
   font-size: 0.96rem;
 }
 
-#contacts #contacts-list {
+#contacts ul#contacts-list {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-#contacts #contacts-list .contacts-list-item i {
-  color: #AFBDC7;
+#contacts ul#contacts-list li.contacts-list-item {
+  display: inline-block;
+}
+
+#contacts ul#contacts-list li.contacts-list-item:not(:last-child) {
+  padding-right: 2rem;
+}
+
+#contacts ul#contacts-list li.contacts-list-item i {
+  color: #8d9ba8;
 }
 
 footer {
   font-size: 0.96rem;
-  color: #AFBDC7;
+  color: #8d9ba8;
   text-align: center;
   padding: 2rem 0;
 }
