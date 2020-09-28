@@ -14,11 +14,7 @@
     "gulp-rename": "^2.0.0",
     "gulp-sass": "^4.1.0",
     "gulp-sourcemaps": "^2.6.5",
-<<<<<<< HEAD
-    "node-sass": "^4.13.0",
+    "node-sass": "^4.14.0",
     "normalize.css": "^8.0.1"
-=======
-    "node-sass": "^4.14.0"
->>>>>>> 17ea9c67bf71a763d8814b5d7157ffd8fc21098f
   }
 }
