@@ -6,7 +6,7 @@
   "author": "Andrea Rufo <info@andrearufo.it>",
   "license": "MIT",
   "dependencies": {
-    "autoprefixer": "^9.7.3",
+    "autoprefixer": "^9.8.8",
     "browser-sync": "^2.26.14",
     "gulp": "^4.0.2",
     "gulp-cssnano": "^2.1.3",
