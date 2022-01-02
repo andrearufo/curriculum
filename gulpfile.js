@@ -7,7 +7,7 @@ var paths = {
 
 let gulp = require('gulp');
 let sourcemaps = require('gulp-sourcemaps');
-let sass = require('gulp-sass');
+const sass = require('gulp-sass')(require('sass'));
 let rename = require('gulp-rename');
 let postcss = require('gulp-postcss');
 let autoprefixer = require('autoprefixer');

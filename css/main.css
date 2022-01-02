@@ -1,5 +1,5 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css");
-@import url(../../node_modules/normalize.css/normalize.css);
+@import '../../node_modules/normalize.css/normalize.css';
 *,
 *::before,
 *::after {
@@ -31,7 +31,6 @@ a {
   color: #045C94;
   text-decoration: none;
 }
-
 a:hover {
   text-decoration: underline;
   color: #033d62;
@@ -44,7 +43,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 code {
   background: #8d9ba8;
-  padding: 0 .1rem;
+  padding: 0 0.1rem;
 }
 
 header h1 {
@@ -53,7 +52,6 @@ header h1 {
   margin-top: 2rem;
   margin-bottom: 0;
 }
-
 header .claim {
   text-align: center;
   color: #8d9ba8;
@@ -70,7 +68,6 @@ section {
   margin: 2rem 0;
   text-align: center;
 }
-
 #portrait img {
   width: 100%;
   height: auto;
@@ -87,29 +84,24 @@ section {
   margin: 0;
   padding: 0;
 }
-
 #curriculum #curriculum-list .curriculum-list-item {
   margin-bottom: 2rem;
 }
-
 #curriculum #curriculum-list .curriculum-list-item .curriculum-list-item-year,
 #curriculum #curriculum-list .curriculum-list-item .curriculum-list-item-position,
 #curriculum #curriculum-list .curriculum-list-item .curriculum-list-item-society,
 #curriculum #curriculum-list .curriculum-list-item .curriculum-list-item-body {
   display: block;
 }
-
 #curriculum #curriculum-list .curriculum-list-item .curriculum-list-item-year {
   color: #8d9ba8;
   font-weight: bold;
   font-size: 0.96rem;
   text-transform: uppercase;
 }
-
 #curriculum #curriculum-list .curriculum-list-item .curriculum-list-item-position {
   font-weight: bold;
 }
-
 #curriculum #curriculum-list .curriculum-list-item .curriculum-list-item-body {
   font-size: 0.96rem;
 }
@@ -119,15 +111,12 @@ section {
   margin: 0;
   padding: 0;
 }
-
 #contacts ul#contacts-list li.contacts-list-item {
   display: inline-block;
 }
-
 #contacts ul#contacts-list li.contacts-list-item:not(:last-child) {
   padding-right: 2rem;
 }
-
 #contacts ul#contacts-list li.contacts-list-item i {
   color: #8d9ba8;
 }
@@ -138,7 +127,6 @@ footer {
   text-align: center;
   padding: 2rem 0;
 }
-
 footer a {
   color: inherit;
 }
