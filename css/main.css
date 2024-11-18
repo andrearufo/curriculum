@@ -33,7 +33,7 @@ a {
 }
 a:hover {
   text-decoration: underline;
-  color: #033d62;
+  color: rgb(2.6578947368, 61.1315789474, 98.3421052632);
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -42,19 +42,19 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 code {
-  background: #8d9ba8;
+  background: rgb(140.9404761905, 155.2976190476, 168.0595238095);
   padding: 0 0.1rem;
 }
 
 header h1 {
   text-align: center;
-  color: #033d62;
+  color: rgb(2.6578947368, 61.1315789474, 98.3421052632);
   margin-top: 2rem;
   margin-bottom: 0;
 }
 header .claim {
   text-align: center;
-  color: #8d9ba8;
+  color: rgb(140.9404761905, 155.2976190476, 168.0595238095);
   font-size: 1.44rem;
   margin-bottom: 2rem;
 }
@@ -94,7 +94,7 @@ section {
   display: block;
 }
 #curriculum #curriculum-list .curriculum-list-item .curriculum-list-item-year {
-  color: #8d9ba8;
+  color: rgb(140.9404761905, 155.2976190476, 168.0595238095);
   font-weight: bold;
   font-size: 0.96rem;
   text-transform: uppercase;
@@ -118,12 +118,12 @@ section {
   padding-right: 2rem;
 }
 #contacts ul#contacts-list li.contacts-list-item i {
-  color: #8d9ba8;
+  color: rgb(140.9404761905, 155.2976190476, 168.0595238095);
 }
 
 footer {
   font-size: 0.96rem;
-  color: #8d9ba8;
+  color: rgb(140.9404761905, 155.2976190476, 168.0595238095);
   text-align: center;
   padding: 2rem 0;
 }

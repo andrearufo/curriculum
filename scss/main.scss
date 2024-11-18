@@ -1,3 +1,5 @@
+@use "sass:color";
+
 // Fontawesome
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css');
 
@@ -13,8 +15,8 @@ $border-radius: 10px;
 $primary: #045C94;
 $body: #708292;
 $background: #ffffff;
-$light: lighten($body, 10%);
-$dark: darken($primary, 10%);
+$light: color.adjust($body, $lightness: 10%);
+$dark: color.adjust($primary, $lightness: -10%);
 
 $font-size-base: 1.2rem;
 $font-size-small: $font-size-base * 0.8;
